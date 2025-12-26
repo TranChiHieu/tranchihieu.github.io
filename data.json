@@ -1,0 +1,126 @@
+{
+  "personalInfo": {
+    "name": "Tran Chi Hieu",
+    "title": "Frontend Developer",
+    "bio": "I am a passionate Frontend Developer with experience in building modern web applications using React, Next.js, and Tailwind CSS. I enjoy crafting clean, responsive UI/UX and writing maintainable code.",
+    "avatar": "images/avatar.jpg",
+    "location": "Ho Chi Minh City, Vietnam",
+    "email": "hieu.tran@example.com",
+    "phone": "+84 123 456 789",
+    "website": "https://tranchihieu.github.io"
+  },
+  "socialLinks": [
+    { "platform": "GitHub", "url": "https://github.com/tranchihieu" },
+    { "platform": "LinkedIn", "url": "https://www.linkedin.com/in/tranchihieu" },
+    { "platform": "Twitter", "url": "https://twitter.com/tranchihieu" },
+    { "platform": "Facebook", "url": "https://facebook.com/tranchihieu" }
+  ],
+  "skills": [
+    { "name": "HTML", "level": "Expert" },
+    { "name": "CSS / SCSS", "level": "Expert" },
+    { "name": "JavaScript", "level": "Advanced" },
+    { "name": "TypeScript", "level": "Advanced" },
+    { "name": "React.js", "level": "Advanced" },
+    { "name": "Next.js", "level": "Intermediate" },
+    { "name": "Redux / Zustand", "level": "Intermediate" },
+    { "name": "Tailwind CSS", "level": "Advanced" },
+    { "name": "Git / GitHub", "level": "Advanced" }
+  ],
+  "experience": [
+    {
+      "company": "Freelancer",
+      "position": "Frontend Developer",
+      "startDate": "2022-01",
+      "endDate": "Present",
+      "location": "Remote",
+      "description": "Developed responsive websites and web applications for clients using React, Next.js, and Tailwind CSS. Optimized UI/UX and application performance."
+    },
+    {
+      "company": "XYZ Tech",
+      "position": "Frontend Intern",
+      "startDate": "2021-06",
+      "endDate": "2021-12",
+      "location": "Ho Chi Minh City, Vietnam",
+      "description": "Assisted in building reusable UI components, implemented features, and gained experience with Agile methodology."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Personal Portfolio",
+      "shortDescription": "A responsive personal portfolio website showcasing projects and skills.",
+      "longDescription": "This portfolio website demonstrates my work, skills, and experience. It features a responsive design, smooth animations, and optimized SEO for better visibility. Built with React and Tailwind CSS.",
+      "features": [
+        "Responsive layout for all screen sizes",
+        "Projects showcase with detailed descriptions",
+        "Contact form integration",
+        "Dark/light mode toggle"
+      ],
+      "technologies": ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS"],
+      "images": [
+        "images/projects/portfolio-1.jpg",
+        "images/projects/portfolio-2.jpg"
+      ],
+      "liveUrl": "https://tranchihieu.github.io",
+      "sourceCode": "https://github.com/tranchihieu/portfolio"
+    },
+    {
+      "name": "E-commerce Website",
+      "shortDescription": "An online store with shopping cart and admin dashboard.",
+      "longDescription": "A fully functional e-commerce website where users can browse products, add them to the shopping cart, and checkout. Admins can manage products and orders through a dashboard. Implemented client-side routing and state management.",
+      "features": [
+        "User authentication and authorization",
+        "Shopping cart with checkout flow",
+        "Admin dashboard for product & order management",
+        "Responsive design for desktop and mobile"
+      ],
+      "technologies": ["React", "Redux", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+      "images": [
+        "images/projects/ecommerce-1.jpg",
+        "images/projects/ecommerce-2.jpg"
+      ],
+      "liveUrl": "https://ecommerce-example.com",
+      "sourceCode": "https://github.com/tranchihieu/ecommerce"
+    },
+    {
+      "name": "Blog Platform",
+      "shortDescription": "A blogging platform for creating, reading, and commenting on posts.",
+      "longDescription": "A platform for users to create, edit, and share blog posts. Includes commenting, search functionality, and user profile pages. Implemented with Next.js for server-side rendering and Firebase for backend services.",
+      "features": [
+        "User registration and login",
+        "Create, edit, and delete blog posts",
+        "Commenting system for each post",
+        "Search and filter posts",
+        "Responsive and SEO-friendly"
+      ],
+      "technologies": ["Next.js", "TypeScript", "Firebase", "Tailwind CSS"],
+      "images": [
+        "images/projects/blog-1.jpg",
+        "images/projects/blog-2.jpg"
+      ],
+      "liveUrl": "https://blog-example.com",
+      "sourceCode": "https://github.com/tranchihieu/blog-platform"
+    }
+  ],
+  "education": [
+    {
+      "school": "University of Technology",
+      "degree": "Bachelor of Computer Science",
+      "startDate": "2017-09",
+      "endDate": "2021-06",
+      "location": "Ho Chi Minh City, Vietnam"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Frontend Development Certification",
+      "issuer": "FreeCodeCamp",
+      "date": "2021-08",
+      "url": "https://www.freecodecamp.org/certification"
+    }
+  ],
+  "languages": [
+    { "name": "Vietnamese", "level": "Native" },
+    { "name": "English", "level": "Intermediate" }
+  ],
+  "interests": ["UI/UX Design", "Open Source", "Photography", "Travel"]
+}

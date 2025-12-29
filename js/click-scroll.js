@@ -1,41 +1,28 @@
-//jquery-click-scroll
-//by syamsul'isul' Arifin
-
-var sectionArray = [1, 2, 3, 4, 5];
+var sectionArray = ['home', 'about', 'experience', 'projects', 'contact'];
 
 $.each(sectionArray, function(index, value){
-          
-     $(document).scroll(function(){
-         var offsetSection = $('#' + 'section_' + value).offset().top - 90;
-         var docScroll = $(document).scrollTop();
-         var docScroll1 = docScroll + 1;
-         
-        
-         if ( docScroll1 >= offsetSection ){
-             $('.navbar-nav .nav-item .nav-link, .sidebar-link').removeClass('active');
-             $('.navbar-nav .nav-item .nav-link:link, .sidebar-link').addClass('inactive');  
-             $('.navbar-nav .nav-item .nav-link').eq(index).addClass('active');
-             $('.navbar-nav .nav-item .nav-link').eq(index).removeClass('inactive');
-             $('.sidebar-link').eq(index).addClass('active');
-             $('.sidebar-link').eq(index).removeClass('inactive');
-         }
-         
-     });
-    
-    $('.click-scroll').eq(index).click(function(e){
-        var offsetClick = $('#' + 'section_' + value).offset().top - 90;
-        e.preventDefault();
-        $('html, body').animate({
-            'scrollTop':offsetClick
-        }, 300)
+
+    $(document).scroll(function(){
+        var offsetSection = $('#' + value).offset().top - 90; // giữ trừ header
+        var docScroll = $(document).scrollTop() + 1; // +1 tránh lỗi so sánh
+
+        if(docScroll >= offsetSection){
+            $('.navbar-nav .nav-link, .sidebar-link').removeClass('active').addClass('inactive');
+            $('.navbar-nav .nav-link').eq(index).addClass('active').removeClass('inactive');
+            $('.sidebar-link').eq(index).addClass('active').removeClass('inactive');
+        }
     });
-    
+
+    $('.click-scroll').eq(index).click(function(e){
+        e.preventDefault();
+        var offsetClick = $('#' + value).offset().top - 90; // giữ trừ header
+        $('html, body').animate({scrollTop: offsetClick}, 300);
+    });
+
 });
 
 $(document).ready(function(){
-    $('.navbar-nav .nav-item .nav-link:link, .sidebar-link').addClass('inactive');    
-    $('.navbar-nav .nav-item .nav-link').eq(0).addClass('active');
-    $('.navbar-nav .nav-item .nav-link:link').eq(0).removeClass('inactive');
-    $('.sidebar-link').eq(0).addClass('active');
-    $('.sidebar-link').eq(0).removeClass('inactive');
+    $('.navbar-nav .nav-link, .sidebar-link').addClass('inactive');
+    $('.navbar-nav .nav-link').eq(0).addClass('active').removeClass('inactive');
+    $('.sidebar-link').eq(0).addClass('active').removeClass('inactive');
 });

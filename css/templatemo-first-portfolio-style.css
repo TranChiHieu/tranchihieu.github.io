@@ -1321,13 +1321,13 @@ strong {
   color: var(--white-color);
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-medium);
-  margin: 0;
+  margin: 0 0 1rem 0;
 }
 
 .sidebar-nav {
   list-style: none;
   padding: 0;
-  margin: 0 0 2rem 0;
+  margin: 0 0 1rem 0;
   flex-grow: 1;
   display: flex;
   flex-wrap: wrap;
@@ -1335,8 +1335,8 @@ strong {
 }
 
 .sidebar-item {
-  margin-bottom: 1rem;
-  margin-right: 10px;
+  /* margin-bottom: 0.5rem; */
+  margin-right: 8px;
 }
 
 .sidebar-link {
@@ -1651,7 +1651,8 @@ strong {
 .site-footer-title {
   font-size: 13px;
   font-weight: 600;
-  color: #111827; /* gần đen */
+  color: #111827;
+  /* gần đen */
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -1659,13 +1660,15 @@ strong {
 /* Nội dung */
 .contact-text {
   font-size: 16px;
-  color: #4b5563; /* xám đậm */
+  color: #4b5563;
+  /* xám đậm */
   line-height: 1.6;
 }
 
 /* Link email / phone */
 .contact-text a {
-  color: #1677ff; /* xanh biển chủ đạo */
+  color: #1677ff;
+  /* xanh biển chủ đạo */
   text-decoration: none;
   font-weight: 500;
   transition: all 0.25s ease;
@@ -1674,4 +1677,24 @@ strong {
 .contact-text a:hover {
   color: #0f5ed6;
   /* text-decoration: underline; */
+}
+
+.sidebar-contact {
+    text-align: center; /* center toàn bộ 3 dòng */
+}
+
+.sidebar-contact .sidebar-intro {
+    margin-bottom: 1rem;
+}
+
+.contact-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 0.5rem;
+}
+
+.contact-item svg {
+    flex-shrink: 0;
 }
